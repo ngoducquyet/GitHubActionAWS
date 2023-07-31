@@ -47,4 +47,5 @@ jobs:
             --application-name application-name \
             --deployment-group-name ft-stg-test \
             --deployment-config-name CodeDeployDefault.OneAtATime \
+            --region us-east-1
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
