@@ -45,6 +45,6 @@ jobs:
           # Assuming the Deployment Group is already setup
           aws deploy create-deployment \
             --application-name application-name \
-            --deployment-group-name AppDeploymentGroupName \
+            --deployment-group-name ft-stg-test \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
